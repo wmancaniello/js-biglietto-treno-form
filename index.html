@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BigliettoTrenoForm</title>
 
     <!-- Custom Style -->
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Ciao</h1>
+      <!-- Nome e Cognome -->
+      <div>
+        <label for="name-surname">Nome e Cognome</label>
+        <input type="text" id="name-surname" />
+      </div>
+      <!-- /Nome e Cognome -->
+
+      <!-- Km da percorrere -->
+      <div>
+        <label for="km-number">Km da percorrere</label>
+        <input type="number" id="km-number" />
+      </div>
+      <!-- /Km da percorrere -->
+
+      <!-- Età -->
+      <div>
+        <label for="age">Fascia d'età</label>
+        <select id="age">
+          <option value="minorenne">Minorenne</option>
+          <option value="maggiorenne">Maggiorenne</option>
+          <option value="over65">Over 65</option>
+        </select>
+      </div>
+      <!-- /Età -->
+
+      <!-- Bottoni -->
+      <div>
+        <!-- Genera -->
+        <button id="generate-btn">Genera</button>
+        <!-- Annulla -->
+        <button id="stop-btn">Annulla</button>
+      </div>
+      <!-- /Bottoni -->
+
+      <!-- Risultato -->
+      <div>
+        <h4>Prezzo Biglietto</h4>
+        <span>Totale:</span><span id="result"></span>
+      </div>
+      <!-- /Risultato -->
     </div>
 
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
