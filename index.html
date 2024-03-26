@@ -10,42 +10,45 @@
   </head>
   <body>
     <div class="container">
-      <!-- Nome e Cognome -->
-      <div>
-        <label for="name-surname">Nome e Cognome</label>
-        <input type="text" id="name-surname" />
-      </div>
-      <!-- /Nome e Cognome -->
+      <h1 class="white">Calcola il tuo prezzo del biglietto</h1>
+      <div class="box-data">
+        <!-- Nome e Cognome -->
+        <div>
+          <label for="name-surname">Nome e Cognome</label>
+          <input class="area" type="text" id="name-surname" placeholder="es. Paolo Rossi" />
+        </div>
+        <!-- /Nome e Cognome -->
 
-      <!-- Km da percorrere -->
-      <div>
-        <label for="km-number">Km da percorrere</label>
-        <input type="number" id="km-number" />
-      </div>
-      <!-- /Km da percorrere -->
+        <!-- Km da percorrere -->
+        <div>
+          <label for="km-number">Km da percorrere</label>
+          <input class="area" type="number" id="km-number" placeholder="es. 30" />
+        </div>
+        <!-- /Km da percorrere -->
 
-      <!-- Età -->
-      <div>
-        <label for="age">Fascia d'età</label>
-        <select id="age">
-          <option value="minorenne">Minorenne</option>
-          <option value="maggiorenne">Maggiorenne</option>
-          <option value="over65">Over 65</option>
-        </select>
-      </div>
-      <!-- /Età -->
+        <!-- Età -->
+        <div>
+          <label for="age">Fascia d'età</label>
+          <select class="area" id="age">
+            <option value="Effettua una scelta...">Effettua una scelta...</option>
+            <option value="minorenne">Minorenne</option>
+            <option value="maggiorenne">Maggiorenne</option>
+            <option value="over65">Over 65</option>
+          </select>
+        </div>
+        <!-- /Età -->
 
-      <!-- Bottoni -->
-      <div>
-        <!-- Genera -->
-        <button id="generate-btn">Genera</button>
-        <!-- Annulla -->
-        <button id="stop-btn">Annulla</button>
+        <!-- Bottoni -->
+        <div>
+          <!-- Genera -->
+          <button class="ms_btn" id="generate-btn">Genera</button>
+          <!-- Annulla -->
+          <button class="ms_btn" id="stop-btn">Annulla</button>
+        </div>
+        <!-- /Bottoni -->
       </div>
-      <!-- /Bottoni -->
-
       <!-- Risultato -->
-      <div>
+      <div class="box-price">
         <h4>Prezzo Biglietto</h4>
         <span>Totale:</span><span id="result"></span>
       </div>
